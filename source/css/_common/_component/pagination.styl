@@ -1,0 +1,40 @@
+.pagination {
+  padding:3em;
+  text-align: center;
+}
+
+.page-number-basic {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  margin: 0 10px;
+  padding: 0 10px;
+  line-height: 30px;
+
+  +mobile() { margin: 0 5px; }
+}
+
+.pagination {
+  .prev, .next, .page-number {
+    @extend .page-number-basic;
+    border-bottom: 1px solid $gainsboro;
+    transition-property: border-color;
+    the-transition();
+
+    &:hover { border-bottom-color: $color-link-hover; }
+  }
+
+  .space {
+    @extend .page-number-basic;
+    padding: 0;
+    margin: 0;
+  }
+
+  .prev { margin-left: 0; }
+  .next { margin-right: 0; }
+
+  .page-number.current {
+    border-bottom-color: $color-link;
+    border-width: 2px;
+  }
+}

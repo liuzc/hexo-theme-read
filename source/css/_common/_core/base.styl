@@ -1,0 +1,116 @@
+h2, h3, h4, h5, h6 { margin: 20px 0 15px; }
+
+ul { list-style: square; }
+ul ul{ list-style: disc; }
+ul ul ul{list-style: circle}
+
+a { word-wrap: break-word; }
+
+hr {
+  margin: 40px 0;
+  height: 3px;
+  border: none;
+  background-color: $gray-lighter;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    white,
+    white 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+blockquote {
+  padding: 0 15px;
+  color: $grey-dim;
+  border-left: 4px solid $gray-lighter;
+
+  cite::before {
+    content: "-";
+    padding: 0 5px;
+  }
+}
+
+dt {
+  font-weight: 700;
+}
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+.pullquote {
+  width: 45%;
+  &.left {
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  &.right {
+    float: right;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-top: 60%;
+  height: 0;
+  overflow: hidden;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+the-transition() {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+mobile() {
+  @media (max-width: 767px) {
+    {block}
+  }
+}
+
+tablet() {
+  @media (min-width: 768px) and (max-width: 991px) {
+    {block}
+  }
+}
+
+desktop() {
+  @media (min-width: 992px) {
+    {block}
+  }
+}
+
+desktop-large() {
+  @media (min-width: 1600px) {
+    {block}
+  }
+}
+
+circle() {
+  border-radius: 50%;
+}
+
+random-color($min, $max) {
+  return floor(math(0, 'random') * ($max - $min + 1) + $min);
+}
+
+// Clearfix. http://nicolasgallagher.com/micro-clearfix-hack/
+clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after { clear: both; }
+}

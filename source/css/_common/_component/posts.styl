@@ -1,0 +1,79 @@
+#posts article{
+  h2, h3, h4, h5, h6 {
+      padding-left: .5em;
+      border-left: 4px solid #2d96bd;
+      padding-top: 1px;
+      margin: .3em 0;
+  }
+}
+
+section#posts {
+	padding: 1.25em 0 2.5em 0;
+}
+
+.post-title{
+	    text-shadow: rgba(50,50,50,.3) 2px 2px 3px;
+}
+
+.post-nav h4{
+  color: #aaa !important;
+  font-size:.9em;
+  border-left:none !important;
+}
+
+.post-body .fancybox img {
+  display: block !important;
+  margin: 0 auto;
+  cursor: pointer;
+  cursor: zoom-out;
+  cursor: -webkit-zoom-in;
+}
+
+.post-body blockquote{
+  padding-left: 1em;
+  background-color: #f6f6f6;
+}
+
+.post-body .image-caption {
+  margin: 10px auto 15px;
+  text-align: center;
+  font-size: $font-size-base;
+  color: $grey-dark;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.post-body .figure .caption {
+  @extend .post-body .image-caption;
+}
+
+.post-sticky-flag {
+  display: inline-block;
+  font-size: 16px;
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.post:last-child {
+  .post-eof.post-eof.post-eof {
+    display: none;
+  }
+}
+
+code:not([class]){
+    padding: 1px 6px;
+    background: #fff;
+    border: 1px solid #DDD;
+    box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
+}
+
+li>code {
+    padding: inherit !important;
+    background inherit !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+
+

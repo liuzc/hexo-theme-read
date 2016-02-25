@@ -1,0 +1,97 @@
+
+favicon: /favicon.ico
+
+# Set default keywords (Use a comma to separate)
+keywords: "柳志超, 柳志超博客"
+
+# Set rss to false to disable feed link.
+# Leave rss as empty to use site's feed link.
+# Set rss to specific value if you have burned your feed already.
+rss:
+
+# Specify the date when the site was setup
+since: 2011
+
+
+
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+# When running hexo in a subdirectory (e.g. domain.tld/blog)
+# Remove leading slashes ( "/archives" -> "archives" )
+menu:
+  home: /
+  #categories: /categories
+  archives: /archives
+  #tags: /tags
+  #commonweal: /404.html
+  guestbook: /guestbook
+  about: '/#about'
+ 
+menu_icons:
+	home:  home
+	archives: archive
+	guestbook: comments-o
+	about: info
+
+custom_logo_image: '/images/me/me256.png'
+
+
+
+
+# Automatically scroll page to section which is under <!-- more --> mark.
+scroll_to_more: true
+
+
+
+
+# Swiftype Search API Key
+swiftype_key: 
+
+
+# Baidu Analytics ID
+baidu_analytics: ''
+# Google Analytics
+#google_analytics: 'UA-19053680-8'
+
+
+########  Comments  ########
+# Duoshuo ShortName
+# #'https://nzw3d6nir.qnssl.com/images/embed.min.js'
+# https://static.duoshuo.com/embed.js
+duoshuo:
+  shortname: ''
+  js_src: ''
+# Disqus
+#disqus_shortname:
+
+
+
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+google_site_verification: ''
+baidu_site_verification: ''
+
+
+
+gplus:
+
+# Motion
+use_motion: false
+
+# Fancybox
+fancybox: true
+
+# Static files
+vendors: vendors
+css: css
+js: js
+images: images
+
+#icp beian
+beian: ''
+
+# Theme version
+version: 0.1

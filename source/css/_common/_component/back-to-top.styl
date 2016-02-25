@@ -1,0 +1,44 @@
+#dynamic-to-top {
+    display: none;
+    overflow: hidden;
+    width: auto;
+    z-index: 90;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    top: auto;
+    left: auto;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #333;
+    font-weight: bold;
+    padding: 17px 16px;
+    border: 1px solid #000;
+    background: #222;
+
+&:hover {
+    background: #000;
+    cursor: pointer
+}
+
+&:active {
+    background: #000;
+}
+
+&,
+&:active,
+&:focus,
+&:hover {
+    outline: none
+}
+
+& span {
+    display: block;
+    overflow: hidden;
+    width: 14px;
+    height: 12px;
+    background: url(../images/up.png )no-repeat center center
+}
+}
